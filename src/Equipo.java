@@ -1,5 +1,6 @@
 public class Equipo {
     // ATRIBUTOS
+    private String nombre;
 
     // CONSTRUCTORES
 
