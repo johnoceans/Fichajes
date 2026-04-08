@@ -31,11 +31,11 @@ public class App {
     equipos[2].setEntrenador(entrenadores[2]);
 
     // AÑADIENDO JUGADORES A EQUIPOS
-    equipos[0].addJugador(jugadores[1]);
-    equipos[1].addJugador(jugadores[2]);
-    equipos[1].addJugador(jugadores[3]);
-    equipos[2].addJugador(jugadores[4]);
-    equipos[3].addJugador(jugadores[0]);
+    equipos[0].añadirJugador(jugadores[1]);
+    equipos[1].añadirJugador(jugadores[2]);
+    equipos[1].añadirJugador(jugadores[3]);
+    equipos[2].añadirJugador(jugadores[4]);
+    equipos[3].añadirJugador(jugadores[0]);
 
   }
 
