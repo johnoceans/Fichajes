@@ -50,4 +50,11 @@ public class Jugador {
 
     // FUNCIONES
 
+    // TO STRING
+    @Override
+    public String toString() {
+        return "Jugador [nombreCamiseta=" + nombreCamiseta + ", fechaNacimiento=" + fechaNacimiento + ", posicion="
+                + posicion + ", traspasoSolicitado=" + traspasoSolicitado + "]";
+    }
+
 }

@@ -28,4 +28,8 @@ public class Entrenador {
 
     // FUNCIONES
 
-}
+    // TO STRING
+    @Override
+    public String toString() {
+        return "Entrenador [nombre=" + nombre + ", formacionPreferida=" + formacionPreferida + "]";
+    }

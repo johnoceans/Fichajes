@@ -18,4 +18,10 @@ public class Equipo {
 
     // FUNCIONES
 
+    // TO STRING
+    @Override
+    public String toString() {
+        return "Equipo [nombreEquipo=" + nombreEquipo + "]";
+    }
+
 }
