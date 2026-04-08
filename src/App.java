@@ -24,6 +24,19 @@ public class App {
     equipos[2] = new Equipo("Arsenal");
     equipos[3] = new Equipo("Tottenham Hotspur");
     equipos[4] = new Equipo("Chelsea");
+
+    // ASIGNAR ENTRENADOR
+    equipos[0].setEntrenador(entrenadores[0]);
+    equipos[1].setEntrenador(entrenadores[1]);
+    equipos[2].setEntrenador(entrenadores[2]);
+
+    // AÑADIENDO JUGADORES A EQUIPOS
+    equipos[0].addJugador(jugadores[1]);
+    equipos[1].addJugador(jugadores[2]);
+    equipos[1].addJugador(jugadores[3]);
+    equipos[2].addJugador(jugadores[4]);
+    equipos[3].addJugador(jugadores[0]);
+
   }
 
 }
