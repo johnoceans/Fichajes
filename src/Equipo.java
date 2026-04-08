@@ -9,6 +9,7 @@ public class Equipo {
     // CONSTRUCTORES
     public Equipo(String nomEq) {
         this.nombreEquipo = nomEq;
+        this.entrenador = null;
         this.jugadores = new ArrayList<>();
     }
 
@@ -30,14 +31,14 @@ public class Equipo {
     }
 
     // FUNCIONES
-    public void addJugador(Jugador jugador) {
-        jugadores.add(jugador);
+    public void añadirJugador(Jugador j) {
+        jugadores.add(j);
     }
 
     // TO STRING
     @Override
     public String toString() {
-        return "Equipo [nombreEquipo=" + nombreEquipo + "]";
+        return "Equipo [nombreEquipo=" + nombreEquipo + ", entrenador=" + entrenador + ", jugadores=" + jugadores + "]";
     }
 
 }
