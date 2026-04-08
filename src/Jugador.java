@@ -49,6 +49,15 @@ public class Jugador {
     }
 
     // FUNCIONES
+    public void solicitarTraspaso() {
+        this.traspasoSolicitado = true;
+        System.out.println("El jugador " + nombreCamiseta + " ha solicitado un traspaso.");
+    }
+
+    public void cancelarTraspaso() {
+        this.traspasoSolicitado = false;
+        System.out.println("El jugador " + nombreCamiseta + " ha cancelado la solicitud de traspaso.");
+    }
 
     // TO STRING
     @Override
