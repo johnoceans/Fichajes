@@ -6,6 +6,7 @@ public class Jugador {
     private LocalDate fechaNacimiento;
     private String posicion;
     private boolean traspasoSolicitado;
+    private static int contadorJugadores = 0;
 
     // CONSTRUCTORES
     public Jugador(String nomCami, LocalDate fechaNac, String posi) {
@@ -13,6 +14,7 @@ public class Jugador {
         this.fechaNacimiento = fechaNac;
         this.posicion = posi;
         this.traspasoSolicitado = false;
+        contadorJugadores++; 
     }
 
     // GETTERS & SETTERS
@@ -46,6 +48,10 @@ public class Jugador {
 
     public void setTraspasoSolicitado(boolean traspasoSolicitado) {
         this.traspasoSolicitado = traspasoSolicitado;
+    }
+
+    public static int getContadorJugadores() {
+        return contadorJugadores;
     }
 
     // FUNCIONES
