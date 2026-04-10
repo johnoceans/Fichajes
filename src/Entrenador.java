@@ -2,11 +2,13 @@ public class Entrenador {
     // ATRIBUTOS
     private String nombre;
     private String formacionPreferida;
+    private static int contadorEntrenadores = 0;
 
     // CONSTRUCTORES
     public Entrenador(String nom, String formacionPrefe) {
         this.nombre = nom;
         this.formacionPreferida = formacionPrefe;
+        contadorEntrenadores++;
     }
     // GETTERS & SETTERS
 
@@ -24,6 +26,10 @@ public class Entrenador {
 
     public void setFormacionPreferida(String formacionPreferida) {
         this.formacionPreferida = formacionPreferida;
+    }
+
+    public static int getContadorEntrenadores() {
+        return contadorEntrenadores;
     }
 
     // FUNCIONES

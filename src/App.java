@@ -37,6 +37,16 @@ public class App {
     equipos[2].añadirJugador(jugadores[4]);
     equipos[3].añadirJugador(jugadores[0]);
 
+    System.out.println(equipos[0]);
+    equipos[1].verPlantilla();
+
+    jugadores[2].solicitarTraspaso();
+    equipos[1].transferirJugador(jugadores[2], equipos[0]);
+
+    System.out.println("Total jugadores: " + Jugador.getContadorJugadores());
+    System.out.println("Total entrenadores: " + Entrenador.getContadorEntrenadores());
+    System.out.println("Total equipos: " + Equipo.getContadorEquipos());
+
   }
 
 }

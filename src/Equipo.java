@@ -5,12 +5,14 @@ public class Equipo {
     private String nombreEquipo;
     private Entrenador entrenador;
     private ArrayList<Jugador> jugadores;
+    private static int contadorEquipos = 0;
 
     // CONSTRUCTORES
     public Equipo(String nomEq) {
         this.nombreEquipo = nomEq;
         this.entrenador = null;
         this.jugadores = new ArrayList<>();
+        contadorEquipos++;
     }
 
     // GETTERS & SETTERS
@@ -34,8 +36,8 @@ public class Equipo {
         return jugadores;
     }
 
-    public void setJugadores(ArrayList<Jugador> jugadores) {
-        this.jugadores = jugadores;
+    public static int getContadorEquipos() {
+        return contadorEquipos;
     }
 
     // FUNCIONES
@@ -58,7 +60,8 @@ public class Equipo {
             destino.añadirJugador(jug);
             jug.setTraspasoSolicitado(false);
 
-            System.out.println("Transferencia realizada correctamente.");
+            System.out.println("El jugador " + jug.getNombreCamiseta() + " ha sido transferido a " + destino.getNombreEquipo()
+                                + " exitosamente :)");
         } else {
             System.out.println("No se pudo realizar la transferencia de " + jug.getNombreCamiseta());
         }
