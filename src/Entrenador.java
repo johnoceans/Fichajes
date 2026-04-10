@@ -33,3 +33,4 @@ public class Entrenador {
     public String toString() {
         return "Entrenador [nombre=" + nombre + ", formacionPreferida=" + formacionPreferida + "]";
     }
+}
