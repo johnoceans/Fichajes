@@ -1,7 +1,16 @@
 import java.time.LocalDate;
 
+/**
+ * Clase principal del programa.
+ * Contiene el método main para ejecutar pruebas.
+ */
 public class App {
-  public static void main(String[] args) {
+
+    /**
+     * Método principal de ejecución.
+     * @param args argumentos de línea de comandos
+     */
+    public static void main(String[] args) {
 
     // Array de jugadores
     Jugador[] jugadores = new Jugador[5];
