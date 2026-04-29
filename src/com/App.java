@@ -3,6 +3,10 @@ package com;
 import java.time.LocalDate;
 
 import com.deporte.*;
+import com.deporte.mister.Formacion;
+import com.deporte.personas.Entrenador;
+import com.deporte.personas.Jugador;
+import com.deporte.player.Posicion;
 
 /**
  * Clase principal del programa.

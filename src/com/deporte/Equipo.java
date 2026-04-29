@@ -1,6 +1,9 @@
 package com.deporte;
 import java.util.ArrayList;
 
+import com.deporte.personas.Entrenador;
+import com.deporte.personas.Jugador;
+
 /**
  * Clase que representa un equipo de fútbol.
  * Un equipo tiene un nombre, un entrenador y una lista de jugadores.

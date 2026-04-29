@@ -1,4 +1,4 @@
-package com.deporte;
+package com.deporte.player;
 
 /**
  * Posiciones posibles de un jugador en el campo.

@@ -1,6 +1,4 @@
-package com.deporte;
-
-package modelo;
+package com.deporte.mister;
 
 /**
  * Formaciones tácticas posibles para un entrenador.
