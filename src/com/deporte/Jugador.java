@@ -1,3 +1,4 @@
+package com.deporte;
 import java.time.LocalDate;
 
 /**
@@ -14,7 +15,7 @@ public class Jugador {
     private LocalDate fechaNacimiento;
 
     /** Posición del jugador en el campo */
-    private String posicion;
+    private Posicion posicion;
 
     /** Indica si el jugador ha solicitado un traspaso */
     private boolean traspasoSolicitado;
@@ -30,7 +31,7 @@ public class Jugador {
      * @param fechaNac Fecha de nacimiento
      * @param posi Posición en el campo
      */
-    public Jugador(String nomCami, LocalDate fechaNac, String posi) {
+    public Jugador(String nomCami, LocalDate fechaNac, Posicion posi) {
         this.nombreCamiseta = nomCami;
         this.fechaNacimiento = fechaNac;
         this.posicion = posi;
@@ -79,7 +80,7 @@ public class Jugador {
      * 
      * @return Posición en el campo
      */
-    public String getPosicion() {
+    public Posicion getPosicion() {
         return posicion;
     }
 
@@ -88,7 +89,7 @@ public class Jugador {
      * 
      * @param posicion Nueva posición
      */
-    public void setPosicion(String posicion) {
+    public void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
 

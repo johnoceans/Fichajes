@@ -1,3 +1,7 @@
+package com.deporte;
+
+import modelo.Formacion;
+
 /**
  * Clase que representa a un entrenador de fútbol.
  * Contiene información sobre su nombre y su formación preferida.
@@ -8,7 +12,7 @@ public class Entrenador {
     private String nombre;
 
     /** Formación táctica preferida del entrenador */
-    private String formacionPreferida;
+    private Formacion formacionPreferida;
 
     /** Contador total de entrenadores creados */
     private static int contadorEntrenadores = 0;
@@ -19,7 +23,7 @@ public class Entrenador {
      * @param nom Nombre del entrenador
      * @param formacionPrefe Formación táctica preferida
      */
-    public Entrenador(String nom, String formacionPrefe) {
+    public Entrenador(String nom, Formacion formacionPrefe) {
         this.nombre = nom;
         this.formacionPreferida = formacionPrefe;
         contadorEntrenadores++;
@@ -48,7 +52,7 @@ public class Entrenador {
      * 
      * @return Formación preferida
      */
-    public String getFormacionPreferida() {
+    public Formacion getFormacionPreferida() {
         return formacionPreferida;
     }
 
@@ -57,7 +61,7 @@ public class Entrenador {
      * 
      * @param formacionPreferida Nueva formación preferida
      */
-    public void setFormacionPreferida(String formacionPreferida) {
+    public void setFormacionPreferida(Formacion formacionPreferida) {
         this.formacionPreferida = formacionPreferida;
     }
 

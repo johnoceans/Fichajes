@@ -1,4 +1,8 @@
+package com;
+
 import java.time.LocalDate;
+
+import com.deporte.*;
 
 /**
  * Clase principal del programa.
@@ -6,25 +10,26 @@ import java.time.LocalDate;
  */
 public class App {
 
-    /**
-     * Método principal de ejecución.
-     * @param args argumentos de línea de comandos
-     */
-    public static void main(String[] args) {
+  /**
+   * Método principal de ejecución.
+   * 
+   * @param args argumentos de línea de comandos
+   */
+  public static void main(String[] args) {
 
     // Array de jugadores
     Jugador[] jugadores = new Jugador[5];
-    jugadores[0] = new Jugador("Harry Kane", LocalDate.of(1993, 7, 28), "Delantero");
-    jugadores[1] = new Jugador("Kevin De Bruyne", LocalDate.of(1991, 6, 28), "Centrocampista");
-    jugadores[2] = new Jugador("Virgil van Dijk", LocalDate.of(1991, 7, 8), "Defensa");
-    jugadores[3] = new Jugador("Alisson Becker", LocalDate.of(1992, 10, 2), "Portero");
-    jugadores[4] = new Jugador("Bukayo Saka", LocalDate.of(2001, 9, 5), "Extremo");
+    jugadores[0] = new Jugador("Harry Kane", LocalDate.of(1993, 7, 28), Posicion.DELANTERO);
+    jugadores[1] = new Jugador("Kevin De Bruyne", LocalDate.of(1991, 6, 28), Posicion.CENTROCAMPISTA);
+    jugadores[2] = new Jugador("Virgil van Dijk", LocalDate.of(1991, 7, 8), Posicion.DEFENSA);
+    jugadores[3] = new Jugador("Alisson Becker", LocalDate.of(1992, 10, 2), Posicion.PORTERO);
+    jugadores[4] = new Jugador("Bukayo Saka", LocalDate.of(2001, 9, 5), Posicion.EXTREMO);
 
     // Array de entrenadores
     Entrenador[] entrenadores = new Entrenador[3];
-    entrenadores[0] = new Entrenador("Pep Guardiola", "4-3-3");
-    entrenadores[1] = new Entrenador("Jürgen Klopp", "4-3-3");
-    entrenadores[2] = new Entrenador("Mikel Arteta", "4-2-3-1");
+    entrenadores[0] = new Entrenador("Pep Guardiola", Formacion._4_3_3);
+    entrenadores[1] = new Entrenador("Jürgen Klopp", Formacion._4_3_3);
+    entrenadores[2] = new Entrenador("Mikel Arteta", Formacion._4_2_3_1);
 
     // Array de equipos
     Equipo[] equipos = new Equipo[5];
