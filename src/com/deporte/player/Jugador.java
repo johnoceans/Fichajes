@@ -1,20 +1,16 @@
+package com.deporte.player;
 import java.time.LocalDate;
+
+import com.deporte.player.Posicion;
 
 /**
  * Clase que representa un jugador de fútbol.
  * Contiene información sobre su nombre, fecha de nacimiento,
  * posición en el campo y estado de traspaso.
  */
-public class Jugador {
-
-    /** Nombre del jugador en la camiseta */
-    private String nombreCamiseta;
-
-    /** Fecha de nacimiento del jugador */
-    private LocalDate fechaNacimiento;
-
+public class Jugador extends Trabajador{
     /** Posición del jugador en el campo */
-    private String posicion;
+    private Posicion posicion;
 
     /** Indica si el jugador ha solicitado un traspaso */
     private boolean traspasoSolicitado;
@@ -30,48 +26,11 @@ public class Jugador {
      * @param fechaNac Fecha de nacimiento
      * @param posi Posición en el campo
      */
-    public Jugador(String nomCami, LocalDate fechaNac, String posi) {
-        this.nombreCamiseta = nomCami;
-        this.fechaNacimiento = fechaNac;
+    public Jugador(String nombre, LocalDate fechaNac, Posicion posi) {
+        super(nombre, fechaNacimiento, null)
         this.posicion = posi;
         this.traspasoSolicitado = false;
         contadorJugadores++; 
-    }
-
-    /**
-     * Obtiene el nombre del jugador.
-     * 
-     * @return Nombre del jugador
-     */
-    public String getNombreCamiseta() {
-        return nombreCamiseta;
-    }
-
-    /**
-     * Establece el nombre del jugador.
-     * 
-     * @param nombreCamiseta Nuevo nombre del jugador
-     */
-    public void setNombreCamiseta(String nombreCamiseta) {
-        this.nombreCamiseta = nombreCamiseta;
-    }
-
-    /**
-     * Obtiene la fecha de nacimiento del jugador.
-     * 
-     * @return Fecha de nacimiento
-     */
-    public LocalDate getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    /**
-     * Establece la fecha de nacimiento del jugador.
-     * 
-     * @param fechaNacimiento Nueva fecha de nacimiento
-     */
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
     }
 
     /**
@@ -79,7 +38,7 @@ public class Jugador {
      * 
      * @return Posición en el campo
      */
-    public String getPosicion() {
+    public Posicion getPosicion() {
         return posicion;
     }
 
@@ -88,7 +47,7 @@ public class Jugador {
      * 
      * @param posicion Nueva posición
      */
-    public void setPosicion(String posicion) {
+    public void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
 
@@ -124,7 +83,7 @@ public class Jugador {
      */
     public void solicitarTraspaso() {
         this.traspasoSolicitado = true;
-        System.out.println("El jugador " + nombreCamiseta + " ha solicitado un traspaso.");
+        System.out.println("El jugador " + nombre + " ha solicitado un traspaso.");
     }
 
     /**
@@ -132,7 +91,7 @@ public class Jugador {
      */
     public void cancelarTraspaso() {
         this.traspasoSolicitado = false;
-        System.out.println("El jugador " + nombreCamiseta + " ha cancelado la solicitud de traspaso.");
+        System.out.println("El jugador " + nombre + " ha cancelado la solicitud de traspaso.");
     }
 
     /**
@@ -142,8 +101,7 @@ public class Jugador {
      */
     @Override
     public String toString() {
-        return "Jugador [nombreCamiseta=" + nombreCamiseta + 
-               ", fechaNacimiento=" + fechaNacimiento + 
+        return "Jugador [nombre=" + nombre +  
                ", posicion=" + posicion + 
                ", traspasoSolicitado=" + traspasoSolicitado + "]";
     }
